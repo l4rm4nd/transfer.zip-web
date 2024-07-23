@@ -7,10 +7,10 @@ services:
     hostname: web-server
     container_name: transferzip-web
     restart: unless-stopped
-    expose:
-      - 80
     depends_on:
       - signaling-server
+    expose:
+      - 80      
     ports:
       - 127.0.0.1:9001:80
     #networks:
@@ -35,3 +35,5 @@ services:
     restart: unless-stopped
     # ports:
     #   - 127.0.0.1:9002:8001
+    #networks:
+    #  - proxy
