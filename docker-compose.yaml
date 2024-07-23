@@ -37,3 +37,7 @@ services:
     #   - 127.0.0.1:9002:8001
     #networks:
     #  - proxy
+
+#networks:
+#  proxy:
+#    external: true
