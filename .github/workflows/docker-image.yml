@@ -36,8 +36,8 @@ jobs:
         name: Build and push web-server
         uses: docker/build-push-action@v2
         with:
-          context: web-server/.
-          file: web-server/Dockerfile
+          context: frontend/.
+          file: frontend/Dockerfile
           push: true
           tags: l4rm4nd/transferzip:web-server
           platforms: linux/amd64          
